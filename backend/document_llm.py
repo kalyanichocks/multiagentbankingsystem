@@ -15,7 +15,8 @@ class  documentsclass:
 
  
   def __init__(self):
-    os.environ["GROQ_API_KEY"] = "gsk*********************************************"
+
+   api_key= os.getenv("GROQ_API_KEY")
     self.llm = ChatGroq(
     model="llama-3.3-70b-versatile",
     temperature=0
