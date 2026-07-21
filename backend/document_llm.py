@@ -1,4 +1,4 @@
-rom pinecone import Pinecone, ServerlessSpec
+from pinecone import Pinecone, ServerlessSpec
 from langchain_community.document_loaders import TextLoader
 from langchain_experimental.text_splitter import SemanticChunker 
 from langchain_huggingface import HuggingFaceEmbeddings
